@@ -1,0 +1,271 @@
+*{
+    margin: 10px;
+    padding: 0;
+}
+.flex-containerRow {
+    display: flex;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    flex-direction: row;
+  }
+  
+  .flex-containerRow > .row {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    
+  }
+  .flex-containerCoulumn{
+    display: flex;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    flex-direction: column;
+  }
+  
+  .coulumn{
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    
+  }
+  span{
+    color: red;
+  }
+/* justify-content */
+.flex-containerJustify{
+    display: flex;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    
+  }
+  
+  .justify{
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    
+  }
+  .flex-containerJustifyStart{
+    display: flex;
+    justify-content:center;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    
+  }
+  .flex-containerJustifyEnd{
+    display: flex;
+    justify-content:end;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    
+  }
+  .flex-containerJustifySpace-around{
+    display: flex;
+    justify-content:space-around;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    
+  }
+  .flex-containerJustifySpace-between{
+    display: flex;
+    justify-content:space-between;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    
+  }
+  .flex-containerJustifySpace-evenly{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: #f1f1f1;
+    border: 2px solid red;
+    
+  }
+  /* grid both */
+  .mainContainer{
+    display: grid;
+    grid-template-areas:
+     "header header header header header header"
+     "menu main main main right right"
+     "menu footer footer footer footer footer";
+     gap: 10px;
+     background-color: #25810a;
+     padding: 10px;
+  }
+  .header{
+    grid-area: header;
+    background-color: rgba(128, 237, 32, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+  }
+  .menu{
+    grid-area: menu;
+    background-color: rgba(128, 237, 32, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+  }
+  .main{
+    grid-area: main;
+    background-color:  rgba(128, 237, 32, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white;
+  }
+  .right{
+    grid-area: right;
+    background-color: rgba(128, 237, 32, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+  }
+  .footer{
+    grid-area: footer;
+    background-color:  rgba(128, 237, 32, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white;
+  }
+  /* gridCoulumn */
+  .gridCoulumn{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 5px;
+    background-color: #25810a;
+  }
+  .sarovarShaikh{
+    background-color: lightgreen;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  /* z-index */
+  img{
+    position: absolute;
+    left: 0;
+    /* top:13270px; */
+    /* bottom: 10px; */
+    z-index: -1;
+  }
+  .box1{
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+  }
+  .box2{
+    
+      width: 300px;
+      height: 100px;  
+      padding: 50px;
+      border: 1px solid red;
+    
+  }
+  .aniDelya{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    animation-name: delay;
+    animation-duration: 4s;
+    animation-delay: 2s;
+
+  }
+  @keyframes delay{
+    from{
+      background-color: #25810a;
+      width: 150px;
+    }
+    to{
+      background-color: red;
+      width: 300px;
+    }
+  }
+  /* .flex-1{
+    display: flex;
+  } */
+  .vissDiffer{
+    width: 100%;
+    margin: auto;
+ 
+  }
+  .non{
+    /* background-color:; */
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+  }
+  .hidd{
+    width: 50%;
+    margin: auto;
+    /* background-color: aqua; */
+  }
+  .div1{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+
+  }
+  .div2{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+    display: none;
+
+  }
+  .div3{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+
+  }
+  /* visibility */
+  .innerCont1{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+
+  }
+  .innerCont2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    visibility: hidden;
+
+  }
+  .innerCont3{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+
+  }
